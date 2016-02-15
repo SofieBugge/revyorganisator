@@ -10,24 +10,56 @@ with open('database.json') as data_file:
 
 """pprint(data)
 pprint(data["acts"][0]["materials"][0]["title"])"""
-
-print (30 * '-')
-print ("   M A I N - M E N U")
-print (30 * '-')
-print ("1. Print all acts")
-print ("2. Print specific act*")
-print ("3. List all occurences of actor*")
-print ("4. Delete act*")
-print ("5. Quit")
-print (30 * '-')
-number_of_acts = len(data["acts"][0]["materials"])
 while True:
+    print (30 * '-')
+    print ("   M A I N - M E N U")
+    print (30 * '-')
+    print ("1. Print all acts")
+    print ("2. Print specific act")
+    print ("3. List all occurences of actor")
+    print ("4. Delete act*")
+    print ("5. Quit")
+    print (30 * '-')
+    number_of_acts = len(data["acts"][0]["materials"])
     selection = input("Please Select:")
     if selection == '1':
         for x in range(0, number_of_acts):
             pprint(data["acts"][0]["materials"][x-1])
     elif selection == '2':
-        print("Not yet implemented")
+        while True:
+            print("Do you wish to seach by ID or title?")
+            print("1. ID\n2. Title:\n")
+            subselection = input()
+            if subselection == "1":
+                id = int(input("Please enter the ID of the act: "))
+                if id <= (number_of_acts - 1) & id > 0:
+                    print("\n")
+                    pprint(data["acts"][0]["materials"][id])
+                    print("\n")
+                    break
+                else:
+                    print("Unknown ID. Returning to main menu.")
+                    break
+            if subselection == "2":
+                name = input("\nPlease enter the title: ")
+                count = 0
+                for x in range(0, number_of_acts):
+                    title = (data["acts"][0]["materials"][x-1]["title"])
+                    if title.lower() == name.lower():
+                        pprint(data["acts"][0]["materials"][x-1])
+                        count = count + 1
+            else:
+                print("\nUnknown option selected. Returning to main menu.")
+                break
+            if count == 0:
+                print("\nUnknown title. Returning to main menu.")
+                break
+            elif count > 1:
+                print("\nMore than one act have the title", title,
+                ". All of them have been printed above, ordered by ID.")
+            else:
+                print("\n")
+                break
     elif selection == '3':
         print("Please enter the name of the actor:")
         name = input()
