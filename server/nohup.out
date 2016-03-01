@@ -1,0 +1,316 @@
+[29/Feb/2016 08:56:42] "GET /polls/ HTTP/1.1" 200 40
+Not Found: /polls
+[29/Feb/2016 08:57:12] "GET /polls HTTP/1.1" 301 0
+[29/Feb/2016 08:57:13] "GET /polls/ HTTP/1.1" 200 40
+Not Found: /polls
+[29/Feb/2016 08:57:14] "GET /polls HTTP/1.1" 301 0
+Not Found: /polls
+[29/Feb/2016 08:57:15] "GET /polls HTTP/1.1" 301 0
+[29/Feb/2016 08:57:15] "GET /polls/ HTTP/1.1" 200 40
+[29/Feb/2016 08:57:36] "GET /polls/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[29/Feb/2016 08:57:36] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /favicon.ico
+[29/Feb/2016 08:57:36] "GET /favicon.ico HTTP/1.1" 404 2056
+[29/Feb/2016 08:57:42] "GET /polls/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[29/Feb/2016 08:57:42] "GET /favicon.ico HTTP/1.1" 404 2056
+[29/Feb/2016 08:59:14] "GET /polls/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[29/Feb/2016 08:59:14] "GET /favicon.ico HTTP/1.1" 404 2056
+[29/Feb/2016 08:59:34] "GET /polls/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[29/Feb/2016 08:59:34] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /polls
+[29/Feb/2016 08:59:37] "GET /polls HTTP/1.1" 301 0
+[29/Feb/2016 08:59:38] "GET /polls/ HTTP/1.1" 200 40
+[29/Feb/2016 08:59:38] "GET /polls/ HTTP/1.1" 200 40
+Not Found: /favicon.ico
+[29/Feb/2016 08:59:39] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /favicon.ico
+[29/Feb/2016 08:59:39] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /
+[29/Feb/2016 09:08:57] "GET / HTTP/1.1" 404 2023
+Not Found: /admin
+[29/Feb/2016 09:19:36] "GET /admin HTTP/1.1" 301 0
+[29/Feb/2016 09:19:36] "GET /admin/ HTTP/1.1" 302 0
+[29/Feb/2016 09:19:36] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1679
+[29/Feb/2016 09:19:37] "GET /static/admin/css/base.css HTTP/1.1" 200 15897
+[29/Feb/2016 09:19:37] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[29/Feb/2016 09:19:37] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[29/Feb/2016 09:19:37] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[29/Feb/2016 09:19:37] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[29/Feb/2016 09:19:46] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1840
+[29/Feb/2016 09:19:47] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[29/Feb/2016 09:25:07] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1839
+[29/Feb/2016 09:25:07] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[29/Feb/2016 09:25:07] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[29/Feb/2016 09:25:08] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: attempt to write a readonly database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/admin/sites.py", line 413, in login
+    return login(request, **defaults)
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/auth/views.py", line 49, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/auth/views.py", line 76, in login
+    auth_login(request, form.get_user())
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/sessions/backends/base.py", line 302, in cycle_key
+    self.create()
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/sessions/backends/db.py", line 53, in create
+    self.save(must_create=True)
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/sessions/backends/db.py", line 86, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: attempt to write a readonly database
+[29/Feb/2016 09:25:11] "POST /admin/login/?next=/admin/ HTTP/1.1" 500 180864
+[29/Feb/2016 09:26:15] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1839
+[29/Feb/2016 09:26:15] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[29/Feb/2016 09:26:15] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[29/Feb/2016 09:26:15] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[29/Feb/2016 09:26:16] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[29/Feb/2016 09:26:16] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[29/Feb/2016 09:26:16] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[29/Feb/2016 09:26:21] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[29/Feb/2016 09:26:21] "GET /admin/ HTTP/1.1" 200 3423
+[29/Feb/2016 09:26:21] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
+[29/Feb/2016 09:26:21] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[29/Feb/2016 09:26:21] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[29/Feb/2016 09:26:30] "GET /admin/polls/question/add/ HTTP/1.1" 200 5292
+[29/Feb/2016 09:26:31] "GET /static/admin/css/forms.css HTTP/1.1" 200 7750
+[29/Feb/2016 09:26:31] "GET /static/admin/js/core.js HTTP/1.1" 200 8366
+[29/Feb/2016 09:26:31] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[29/Feb/2016 09:26:31] "GET /static/admin/js/actions.js HTTP/1.1" 200 6259
+[29/Feb/2016 09:26:31] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6871
+[29/Feb/2016 09:26:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[29/Feb/2016 09:26:31] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7693
+[29/Feb/2016 09:26:31] "GET /static/admin/js/calendar.js HTTP/1.1" 200 6875
+[29/Feb/2016 09:26:31] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[29/Feb/2016 09:26:31] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 18563
+[29/Feb/2016 09:26:31] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 62474
+[29/Feb/2016 09:26:31] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 247597
+[29/Feb/2016 09:26:31] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[29/Feb/2016 09:26:32] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[29/Feb/2016 09:26:32] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[29/Feb/2016 09:26:39] "POST /admin/polls/question/add/ HTTP/1.1" 302 0
+[29/Feb/2016 09:26:39] "GET /admin/polls/question/ HTTP/1.1" 200 4731
+[29/Feb/2016 09:26:39] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6100
+[29/Feb/2016 09:26:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[29/Feb/2016 09:26:40] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[29/Feb/2016 09:26:40] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+Not Found: /
+[01/Mar/2016 04:51:57] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:51:57] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:02] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:02] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:07] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:07] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:12] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:12] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:17] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:17] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:22] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:22] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:27] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:27] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:32] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:32] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:37] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:37] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:42] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:42] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:47] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:47] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:52] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:52] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:52:57] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:52:57] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:02] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:02] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:07] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:07] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:12] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:12] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:18] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:18] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:23] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:23] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:28] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:28] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:33] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:33] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:38] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:38] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:43] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:43] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:48] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:48] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:53] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:53] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:53:58] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:53:58] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:03] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:03] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:08] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:08] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:13] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:13] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:18] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:18] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:23] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:23] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:28] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:28] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:33] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:33] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:38] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:38] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:44] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:44] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:49] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:49] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:54] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:54] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:54:59] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:54:59] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:04] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:04] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:09] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:09] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:14] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:14] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:19] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:19] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:24] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:24] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:29] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:29] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:34] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:34] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:39] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:39] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:44] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:44] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:49] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:49] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:54] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:54] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:55:59] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:55:59] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:04] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:04] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:10] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:10] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:15] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:15] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:20] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:20] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:25] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:25] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:30] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:30] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:35] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:35] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:40] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:40] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:45] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:45] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:50] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:50] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:56:55] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:56:55] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:00] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:00] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:05] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:05] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:10] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:10] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:15] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:15] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:20] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:20] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:25] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:25] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:30] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:30] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:36] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:36] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:41] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:41] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:46] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:46] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:51] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:51] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:57:56] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:57:56] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:01] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:01] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:06] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:06] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:11] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:11] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:16] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:16] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:21] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:21] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:26] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:26] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:31] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:31] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:36] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:36] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:41] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:41] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:46] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:46] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:51] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:51] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:58:56] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:58:56] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
