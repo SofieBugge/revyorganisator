@@ -314,3 +314,110 @@ Not Found: /
 [01/Mar/2016 04:58:51] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
 [01/Mar/2016 04:58:56] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
 [01/Mar/2016 04:58:56] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:02] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:02] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:07] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:07] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:12] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:12] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:17] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:17] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:22] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:22] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:27] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:27] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:32] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:32] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:37] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:37] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:42] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:42] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:47] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:47] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+[01/Mar/2016 04:59:52] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00$\x01¨À8`wÙ\x04')
+[01/Mar/2016 04:59:52] "   TZ          0I    $¨À8`wÙ                                                 " 400 -
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/sessions/backends/base.py", line 193, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/sqlite3/base.py", line 207, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/admin/sites.py", line 233, in inner
+    if not self.has_permission(request):
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/admin/sites.py", line 173, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 204, in inner
+    self._setup()
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 351, in _setup
+    self._wrapped = self._setupfunc()
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/auth/middleware.py", line 22, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/auth/middleware.py", line 10, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/auth/__init__.py", line 167, in get_user
+    user_id = _get_user_session_key(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/sessions/backends/base.py", line 48, in __getitem__
+    return self._session[key]
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/sessions/backends/base.py", line 198, in _get_session
+    self._session_cache = self.load()
+  File "/usr/local/lib/python3.4/dist-packages/django/contrib/sessions/backends/db.py", line 33, in load
+    expire_date__gt=timezone.now()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 381, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 240, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/sql/compiler.py", line 846, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 231, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 204, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/sqlite3/base.py", line 207, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+[02/Mar/2016 11:13:45] "GET /admin/ HTTP/1.1" 500 187832
+Not Found: /favicon.ico
+[02/Mar/2016 11:13:46] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /favicon.ico
