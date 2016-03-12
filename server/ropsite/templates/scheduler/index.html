@@ -14,7 +14,7 @@
         {% if øvedage %}
             <ul>
                 {% for øvedag in øvedage %}
-                <li>{{ øvedag.dato }}</li>
+                <li><a href="/scheduler/ovedag/{{ øvedag.url }}">{{ øvedag }}</li>
                 {% endfor %}
             </ul>
         {% else %}

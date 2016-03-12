@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rango</title>
+    </head>
+
+    <body>
+        <h1>{{ øvedag_dato }}</h1>
+        {% if øvedag %}
+            {% if lokaler %}
+            <ul>
+                {% for lokale in lokaler %}
+                <li><a href="{{ page.url }}">{{ lokale.lokalenavn }}</a></li>
+                {% endfor %}
+            </ul>
+            {% else %}
+                <strong>Ingen lokaler registreret for denne øvedag.</strong>
+            {% endif %}
+        {% else %}
+            {{ øvedag_dato }} er ikke registreret som en øvedag. Klik her for at tilføje den.
+        {% endif %}
+    </body>
+</html>

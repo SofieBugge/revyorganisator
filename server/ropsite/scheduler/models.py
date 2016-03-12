@@ -1,4 +1,6 @@
 from django.db import models
+from time import strftime
+
 #import reader
 
 # Create your models here.
@@ -8,7 +10,7 @@ class Øvedage(models.Model):
     radmd5 = models.CharField(max_length=32, unique=True)
 
     def __str__(self):
-        return str(self.dato)
+        return self.dato.strftime("%Y-%m-%d")
 
 
 class Lokaler(models.Model):
