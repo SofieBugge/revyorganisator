@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 
-class Øvedag(models.Model):
+class Øvedage(models.Model):
     dato = models.DateField("Øvedag")
     radmd5 = models.CharField(max_length=32, unique=True)
 
@@ -13,7 +13,7 @@ class Øvedag(models.Model):
 
 class Lokaler(models.Model):
     lokalenavn = models.CharField(max_length=128, unique=True)
-    øvedag = models.ForeignKey("Øvedag", null=True)
+    øvedag = models.ForeignKey("Øvedage", null=True)
 
     def __str__(self):
         return str(self.lokalenavn)
