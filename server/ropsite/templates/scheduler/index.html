@@ -14,15 +14,14 @@
         {% if øvedage %}
             <ul>
                 {% for øvedag in øvedage %}
-                <li><a href="/scheduler/ovedag/{{ øvedag.url }}">{{ øvedag }}</li>
+                <li><a href="/scheduler/ovedag/{{ øvedag.url }}">{{ øvedag }}</li>               
                 {% endfor %}
             </ul>
+<a href="/scheduler/tilfoj_ovedag/">Tilføj øvedag</a>
         {% else %}
             <strong>Der er ingen øvedage i databasen.</strong>
+            <a href="/scheduler/tilfoj_ovedag/"> Klik her for at tilføje en.</a>
         {% endif %}
-
-        <a href="/scheduler/about/">About</a><br />
-	<img src="{% static "logo.png" %}" alt="DIKURevyens logo" /> <!-- New line -->
+	<br /><img src="{% static "logo.png" %}" alt="DIKURevyens logo" /> <!-- New line -->
     </body>
-
 </html>

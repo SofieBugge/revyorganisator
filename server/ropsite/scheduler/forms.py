@@ -1,29 +1,35 @@
-from django import forms
-from rango.models import Page, Category
+import datetime
+from datetime import datetime, date
 
-class CategoryForm(forms.ModelForm):
-    name = forms.CharField(max_length=128, help_text="Please enter the category name.")
-    views = forms.IntegerField(widget=forms.HiddenInput(), initial=0)
-    likes = forms.IntegerField(widget=forms.HiddenInput(), initial=0)
+from django import forms
+from scheduler.models import Øvedage, Lokaler, Segmenter
+
+class ØvedagForm(forms.ModelForm):
+    dato = forms.DateField(help_text="Vælg venligst en dato for den nye øvedag.")
 
     # An inline class to provide additional information on the form.
     class Meta:
-        # Provide an association between the ModelForm and a model
-        model = Category
+        # Provide an association between the ModelForm and a model, as well as hiding unnecesary fields.
+        model = Øvedage
+        fields = ('dato',)
 
-class PageForm(forms.ModelForm):
-    title = forms.CharField(max_length=128, help_text="Please enter the title of the page.")
-    url = forms.URLField(max_length=200, help_text="Please enter the URL of the page.")
-    views = forms.IntegerField(widget=forms.HiddenInput(), initial=0)
+class LokaleForm(forms.ModelForm):
+    lokalenavn = forms.CharField(max_length=128, help_text="Indtast venligst navnet på det nye øvelokale.")
 
     class Meta:
         # Provide an association between the ModelForm and a model
-        model = Page
-
-        # What fields do we want to include in our form?
-        # This way we don't need every field in the model present.
-        # Some fields may allow NULL values, so we may not want to include them...
-        # Here, we are hiding the foreign key.
-        fields = ('title', 'url', 'views')
+        model = Lokaler
+        fields = ('lokalenavn',)
 
 
+class SegmentForm(forms.ModelForm):
+    act        = forms.CharField(max_length=128)
+#    act        = formsCharField(max_length=128, empty_label="Vælg act til øvelse")
+    start      = forms.TimeField()
+    slut       = forms.TimeField()
+    pre_break  = forms.IntegerField()
+    post_break = forms.IntegerField()
+
+    class Meta:
+        model = Segmenter
+        fields = ('act', 'start', 'slut', 'pre_break', 'post_break')

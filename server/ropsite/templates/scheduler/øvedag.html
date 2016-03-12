@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rango</title>
+        <title>{{ øvedag_dato }}</title>
     </head>
 
     <body>
@@ -13,8 +13,10 @@
                 <li><a href="{{ page.url }}">{{ lokale.lokalenavn }}</a></li>
                 {% endfor %}
             </ul>
+            <a href="/scheduler/tilfoj_lokale/">Tilføj lokale</a> - <a href="/scheduler/fjern_lokale/">Fjern lokale*</a>
             {% else %}
-                <strong>Ingen lokaler registreret for denne øvedag.</strong>
+                <strong>Ingen lokaler registreret for denne øvedag. </strong><br /> 
+                <a href="/scheduler/tilfoj_lokale/">Klik her for at tilføje et</a>, eller <a href="/scheduler/tilfoj_ovedag/">tryk her for at importere lokaler fra en tidligere øvedag.</a>
             {% endif %}
         {% else %}
             {{ øvedag_dato }} er ikke registreret som en øvedag. Klik her for at tilføje den.

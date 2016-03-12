@@ -5,9 +5,14 @@ from time import strftime
 
 # Create your models here.
 
+class RAD_verifier(models.Model):
+    md5chksum = models.CharField(max_length=32, unique=True)
+
+    def __str__(self):
+        return self.md5chksum
+
 class Øvedage(models.Model):
-    dato = models.DateField("Øvedag")
-    radmd5 = models.CharField(max_length=32, unique=True)
+    dato = models.DateField(unique=True)
 
     def __str__(self):
         return self.dato.strftime("%Y-%m-%d")
@@ -23,8 +28,8 @@ class Lokaler(models.Model):
 class Segmenter(models.Model):
     actid      = models.IntegerField(default=0)
     lokale     = models.ForeignKey("Lokaler", null=True)
-    start      = models.CharField(max_length=5)
-    slut       = models.CharField(max_length=5)
+    start      = models.TimeField()
+    slut       = models.TimeField()
     pre_break  = models.IntegerField(default=15)
     post_break = models.IntegerField(default=15)
 
