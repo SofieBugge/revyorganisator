@@ -7,7 +7,7 @@ with open('database.js') as data_file:
 
 
 def reader(index, item):
-    """Take two inputs and print a list of strings from the RAD.js file."""
+    """Take two inputs and return a list of strings from the RAD.js file."""
     if item in ["title", "author", "length", "status", "version",
                 "revuename", "revueyear", "loaction", "type", "order"]:
         return [str(data["acts"][0]["materials"][index][item])]
@@ -37,7 +37,7 @@ def reader(index, item):
                 ["props"])]
 
     else:
-        return "Invalid input"
+        return ["Invalid input"]
 
 
 '''forfattere, rollefordeling,  rekvisitter.
