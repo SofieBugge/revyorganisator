@@ -421,3 +421,188 @@ django.db.utils.OperationalError: unable to open database file
 Not Found: /favicon.ico
 [02/Mar/2016 11:13:46] "GET /favicon.ico HTTP/1.1" 404 2056
 Not Found: /favicon.ico
+[02/Mar/2016 15:22:38] "GET /admin/ HTTP/1.1" 302 0
+[02/Mar/2016 15:22:38] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1682
+[02/Mar/2016 15:22:39] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[02/Mar/2016 15:22:39] "GET /static/admin/css/base.css HTTP/1.1" 200 15897
+[02/Mar/2016 15:22:39] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[02/Mar/2016 15:22:39] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[02/Mar/2016 15:22:39] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+Not Found: /
+[02/Mar/2016 15:22:42] "GET / HTTP/1.1" 404 2023
+Not Found: /polls
+[02/Mar/2016 15:22:45] "GET /polls HTTP/1.1" 301 0
+[02/Mar/2016 15:22:46] "GET /polls/ HTTP/1.1" 200 150
+[02/Mar/2016 15:22:48] "GET /polls/1/ HTTP/1.1" 200 559
+[02/Mar/2016 15:22:50] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[02/Mar/2016 15:22:50] "GET /polls/1/results/ HTTP/1.1" 200 184
+[02/Mar/2016 15:23:13] "GET /polls/1/ HTTP/1.1" 200 559
+[04/Mar/2016 18:15:20] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[04/Mar/2016 18:15:20] "    c                           " 400 -
+Not Found: /https:/m.baidu.com/
+[05/Mar/2016 05:41:41] "GET https://m.baidu.com/ HTTP/1.1" 404 1653
+Not Found: /
+[05/Mar/2016 23:04:30] "GET / HTTP/1.0" 404 2012
+Not Found: /
+[06/Mar/2016 17:58:36] "GET / HTTP/1.1" 404 2023
+Not Found: /favicon.ico
+[06/Mar/2016 17:58:36] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /favicon.ico
+[06/Mar/2016 17:58:36] "GET /favicon.ico HTTP/1.1" 404 2056
+[06/Mar/2016 17:58:55] "GET /polls/ HTTP/1.1" 200 150
+[06/Mar/2016 17:58:58] "GET /polls/1/ HTTP/1.1" 200 559
+[06/Mar/2016 17:59:01] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[06/Mar/2016 17:59:01] "GET /polls/1/results/ HTTP/1.1" 200 183
+[06/Mar/2016 17:59:04] "GET /polls/1/ HTTP/1.1" 200 559
+[06/Mar/2016 17:59:06] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[06/Mar/2016 17:59:06] "GET /polls/1/results/ HTTP/1.1" 200 183
+[06/Mar/2016 17:59:13] "GET /polls/2/ HTTP/1.1" 200 213
+[06/Mar/2016 17:59:14] "POST /polls/2/vote/ HTTP/1.1" 200 268
+[06/Mar/2016 17:59:16] "POST /polls/2/vote/ HTTP/1.1" 200 268
+Not Found: /
+[06/Mar/2016 22:55:26] "GET / HTTP/1.1" 404 2023
+Not Found: /favicon.ico
+[06/Mar/2016 22:55:26] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /favicon.ico
+[06/Mar/2016 22:55:26] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /
+[07/Mar/2016 02:32:52] "GET / HTTP/1.1" 404 2023
+Not Found: /favicon.ico
+[07/Mar/2016 02:32:52] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /
+[07/Mar/2016 09:51:16] "GET / HTTP/1.1" 404 2023
+Not Found: /favicon.ico
+[07/Mar/2016 09:51:16] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /
+[07/Mar/2016 09:51:37] "GET / HTTP/1.1" 404 2023
+Not Found: /
+[07/Mar/2016 10:49:27] "GET / HTTP/1.1" 404 2023
+Not Found: /favicon.ico
+[07/Mar/2016 10:49:27] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /favicon.ico
+[07/Mar/2016 10:49:27] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /
+[07/Mar/2016 11:06:49] "GET / HTTP/1.1" 404 2023
+[07/Mar/2016 11:06:53] "GET /polls/ HTTP/1.1" 200 150
+[07/Mar/2016 11:06:56] "GET /polls/2/ HTTP/1.1" 200 213
+[07/Mar/2016 11:06:58] "POST /polls/2/vote/ HTTP/1.1" 200 268
+[07/Mar/2016 11:07:01] "GET /polls/1/ HTTP/1.1" 200 559
+[07/Mar/2016 11:07:03] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[07/Mar/2016 11:07:04] "GET /polls/1/results/ HTTP/1.1" 200 184
+Not Found: /
+[07/Mar/2016 17:04:21] "GET / HTTP/1.1" 404 2023
+[07/Mar/2016 17:04:21] code 400, message Bad request version ('À+À/\x00\x9eÌ\x14Ì\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:21] code 400, message Bad request version ('î§µ¨ÕHp¾\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:21] code 400, message Bad request syntax ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01\x89W\x8dç6\x88+¿µºõQÈ\x8cÒK´d\x89¿2I\x06O\x8b\x87@Ä\x8cÜ\x84\x8c\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /favicon.ico
+[07/Mar/2016 17:04:21] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /polls
+[07/Mar/2016 17:04:45] "GET /polls HTTP/1.1" 301 0
+[07/Mar/2016 17:04:45] "GET /polls/ HTTP/1.1" 200 150
+[07/Mar/2016 17:04:45] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00Ñ\x01\x00\x00Í\x03\x03\x9a~Ï£bÊ_BÌÂ\x97\x98\x92\x96r\x92\x08Z8¬¹ÙdØ¡¸èFÐ³ù\x80\x00\x00')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:45] code 400, message Bad request syntax ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x02O\x1b\xa0§ö\x90\x1e \x12\x89\x1di\x85·mÿ²7Q©.¢\x1amF\x0eOZì\x9aÖJ\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:45] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01þç\x17Pìù')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:47] "GET /polls/2/ HTTP/1.1" 200 213
+[07/Mar/2016 17:04:47] code 400, message Bad request syntax ('\x16\x03\x01\x00Ñ\x01\x00\x00Í\x03\x03ä¡\x1fô¡Â)(|%÷´!ãéNÄ»(2ÌíF\x16æ\xa0²jµV\x02¾\x00\x00\x1eÀ+À/\x00\x9eÌ\x14Ì\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:47] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x02lm\x8dMm±\x97Ö´¿¸Í¹@Á²$®á')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:47] code 400, message Bad request version ('·ô¶\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:48] "POST /polls/2/vote/ HTTP/1.1" 200 268
+[07/Mar/2016 17:04:49] code 400, message Bad request syntax ('\x16\x03\x01\x00Ñ\x01\x00\x00Í\x03\x03û\x19yÊ©\x12ôC:Ðè@\x0b\x1bG.\x03u@\x11\x85>\x14\x93¹úýÕþi*\x1c\x00\x00\x1eÀ+À/\x00\x9eÌ\x14Ì\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:49] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x02t')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:49] code 400, message Bad request version ('4i@®{\x9a`Î')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:50] "POST /polls/2/vote/ HTTP/1.1" 200 268
+[07/Mar/2016 17:04:50] code 400, message Bad request syntax ('\x16\x03\x01\x00Ñ\x01\x00\x00Í\x03\x03È¬\x0c)\x11@¨Ï³d¼0çYÖê\x91}\t\x8d>\x93\x07¤\x06\x10¾û\x80\x9aÞz\x00\x00\x1eÀ+À/\x00\x9eÌ\x14Ì\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:50] code 400, message Bad request syntax ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x02\x19KF0\xadc]9\\\x18Àêí\\#óÇµ\x1f#ØS\x9c\x8f\x85\x7f\t\x94Jãc\x84\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:50] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01\x95Á\x03\x9f')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:50] "POST /polls/2/vote/ HTTP/1.1" 200 268
+[07/Mar/2016 17:04:50] code 400, message Bad request version ('À+À/\x00\x9eÌ\x14Ì\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:50] code 400, message Bad request version ('Ö®´6\\Ò¶$ìá^©+é\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:50] code 400, message Bad request syntax ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01:_½\x8c<\x8f\x83ï\x9dUçy\x81.\x86±\x85H½{\x9dñ Mí¥\x1f°\x8dÐ\rØ\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:51] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ñ\x01\x00\x00Í\x03\x03'2·ûæk<\x03«vÉ«n\x92\x88íÎæ5+_,aoS\x17\x06\x98\x87s\x0e\x10\x00\x00")
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:51] code 400, message Bad request version ('D\x9e\x16cñ\x80Ô\x15\x9eðËÅ§ð\x0fJé3~ò°cl\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01¥lQ,5\x81\x98Wa\x87\x96ò\x8eöZ~A\x95\x98Y\x842Q\x7fCüþF¯')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] code 400, message Bad request version ('À+À/\x00\x9eÌ\x14Ì\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] code 400, message Bad request syntax ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x02ÏV\x1b±\xad\x0bt>\x07ì[\x17°VN\x86?§k\x81\x1d,¿\x8e¬\x1f\x10¤c\x92n\x01\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] code 400, message Bad request syntax ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01X2\x912lfqY\x86ZJR´XM÷ËG\x80k£¼#Í\x8b³6x.\x99àH\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] "GET /polls/2/ HTTP/1.1" 200 213
+[07/Mar/2016 17:04:52] code 400, message Bad request version ('À+À/\x00\x9eÌ\x14Ì\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] code 400, message Bad request syntax ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x02')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] code 400, message Bad request syntax ("\x16\x03\x01\x00Ñ\x01\x00\x00Í\x03\x03uÀÁ0®\rA}T\\É\x02)\x1eW/ÉT²'ÅV.\x0c¤B8\x93\x19¸º\x97\x00\x00\x1eÀ+À/\x00\x9eÌ\x14Ì\x13À")
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x02{\x9egl<G\x9a9\x10')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:52] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01\x87kbt£qJÏïjý\x93-Ó\x9c¸K@ù6u¦fDõ\x89hÏ')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:53] code 400, message Bad request version ('À+À/\x00\x9eÌ\x14Ì\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:53] code 400, message Bad request syntax ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x02\x06xF]<ÐJp\x02\x82\x8a×\x80Äg\x9eI*\x9c\x1b|ÐñÛ¥@\x7f`\x9f\x98%S\x00\x00\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Mar/2016 17:04:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00ª\x01\x00\x00¦\x03\x01Â,@÷¬\x1b\x1af(²EÊÂ\x06±K\x07ÄÆ/')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /polls
+[09/Mar/2016 14:43:29] "GET /polls HTTP/1.1" 301 0
+[09/Mar/2016 14:43:29] "GET /polls/ HTTP/1.1" 200 150
+Not Found: /favicon.ico
+[09/Mar/2016 14:43:30] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /favicon.ico
+[09/Mar/2016 14:43:30] "GET /favicon.ico HTTP/1.1" 404 2056
+[09/Mar/2016 14:43:34] "GET /polls/1/ HTTP/1.1" 200 559
+[09/Mar/2016 14:43:43] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[09/Mar/2016 14:43:43] "GET /polls/1/results/ HTTP/1.1" 200 185
+[09/Mar/2016 14:43:51] "GET /admin/ HTTP/1.1" 302 0
+[09/Mar/2016 14:43:51] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1682
+[09/Mar/2016 14:43:51] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[09/Mar/2016 14:43:51] "GET /static/admin/css/base.css HTTP/1.1" 200 15897
+[09/Mar/2016 14:43:51] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[09/Mar/2016 14:43:52] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[09/Mar/2016 14:43:52] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[09/Mar/2016 14:43:58] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1842
+[09/Mar/2016 14:43:59] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[09/Mar/2016 14:44:04] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1842
+[09/Mar/2016 14:44:10] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[09/Mar/2016 14:44:10] "GET /admin/ HTTP/1.1" 200 4056
+[09/Mar/2016 14:44:11] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
+[09/Mar/2016 14:44:11] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[09/Mar/2016 14:44:11] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+Not Found: /
+[09/Mar/2016 23:53:18] "GET / HTTP/1.1" 404 2023
+Not Found: /favicon.ico
+[09/Mar/2016 23:53:18] "GET /favicon.ico HTTP/1.1" 404 2056
+Not Found: /polls
+[09/Mar/2016 23:53:23] "GET /polls HTTP/1.1" 301 0
+[09/Mar/2016 23:53:23] "GET /polls/ HTTP/1.1" 200 150
+[09/Mar/2016 23:53:25] "GET /polls/2/ HTTP/1.1" 200 213
+[09/Mar/2016 23:53:27] "POST /polls/2/vote/ HTTP/1.1" 200 268
+[09/Mar/2016 23:53:29] "GET /polls/2/ HTTP/1.1" 200 213
+[09/Mar/2016 23:53:30] "GET /polls/1/ HTTP/1.1" 200 559
+[09/Mar/2016 23:53:34] "POST /polls/1/vote/ HTTP/1.1" 302 0
+[09/Mar/2016 23:53:35] "GET /polls/1/results/ HTTP/1.1" 200 185
+Not Found: /admin
